@@ -1,0 +1,39 @@
+:root {
+    --color-primary: #a18866;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-gray: #d7d6d4;
+}
+
+.bg-primary {
+    background: var(--color-primary) !important;
+}
+
+.bg-white {
+    background: var(--color-white) !important;
+}
+
+.bg-gray {
+    background: var(--color-gray) !important;
+}
+
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.color-white {
+    color: var(--color-white) !important;
+}
+
+.color-black {
+    color: var(--color-black) !important;
+}
+
+.bl {
+    border-left: 1px solid #000;
+}
+
+
+.btn {
+    border-radius: 0;
+}
