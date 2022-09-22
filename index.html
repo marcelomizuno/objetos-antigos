@@ -7,6 +7,14 @@
     <title>Objetos Antigos</title>
     <!-- Bootstrap - CSS only -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
@@ -18,7 +26,7 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <!-- Header-->
@@ -27,7 +35,7 @@
         <div class="row gx-4">
           <div class="col-2">
             <a href="/">
-              <img src="logo.png" alt="Objetos Antigos" class="img-fluid" />
+              <img src="img/logo.png" alt="Objetos Antigos" class="img-fluid" />
             </a>
           </div>
           <div class="col-6">
@@ -115,173 +123,10 @@
         </div>
       </div>
     </header>
-<div class="w-100 bg-primary p-3">
-  <div class="container">
-  <div class="row">
-    <div class="col-2 d-flex align-items-center">
-      <a class="nav-link p-2" href="#">
-        <svg
-          version="1.2"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 40 35"
-          width="40"
-          height="35"
-        >
-          <title>categories</title>
-          <defs>
-            <image
-              width="42"
-              height="36"
-              id="categories"
-              href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAkCAYAAAD/yagrAAAAAXNSR0IArs4c6QAAAIlJREFUWEftmDEKACAMA+3/H62LdZEuckIDcTfGszTFGCIrts/Z3G/IGk3jXQDnS19EbfTxiUz0EVy5rSRKH0Tp6bUn6ubfdLq1o/KiNkrXgGzW0yAoPWc9RdJZT5FMHX2iNBFKz0MJRfLoOOtppHJE/VMClYCHEgjk0I/Qbl1AnyhVW7SOzlCyAL+0KiV7WsAwAAAAAElFTkSuQmCC"
-            />
-          </defs>
-          <style></style>
-          <use
-            id="Rectangle 23 copy 2"
-            href="#categories"
-            transform="matrix(1,0,0,1,-1,-1)"
-          />
-        </svg>
-        Categorias
-      </a>
-    </div>
-    <div class="col-2 bl">
-      <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 48"
-                      width="50"
-                      height="48"
-                    >
-                      <title>bicycle</title>
-                      <defs>
-                        <image
-                          width="50"
-                          height="48"
-                          id="bicycle"
-                          href="data:image/png;base64,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"
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#bicycle"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Bicicleta
-                  </a>
-    </div>
-    <div class="col-2 bl">
-      <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 51 48"
-                      width="51"
-                      height="48"
-                    >
-                      <title>camera</title>
-                      <defs>
-                        <image
-                          width="51"
-                          height="48"
-                          id="camera"
-                          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAYAAAC8NUKEAAAAAXNSR0IArs4c6QAAA3BJREFUaEPtmVmojVEUx3/3QSkZiwfK8CLDC+VFmfLggQdDSuahjEmGW17MUgplzlCGB5ISNxQSQsisW2aRzBLJTNH/to6+u9vfOWc7zvfdczv78fv2+db6n7X2Wv/13xXAE/JbA4Hb+W1NZ1cF8DtP092Bm3nuTWVbFMwOoNrxogWw0J6VFJihwCEHTHvgcRlMCokWTbNckbkPfHV8vAeMSMFvr8kQMIuBp5Gv9AJ6AN1KEYxbACYAK4EtMWCWJA0yJDI+MOuA047TTYF+gL6d6CoUzGxPmintbtQ3MFUxYZkTKfe5IjcL6G+b1CL029hVzMgs9VhVEQlpvruATsArQD0va7EpJhjfmRF1Wg089wA94eF+AvPBaJQvpWt9Jg0w14BPDhiV+JmAnI+uOg/Gl2YisA0tnaJglGL76nJk4sBovLjsRGYUcMHAzAN6O+8/Az8zz9JIszgwa3Ok2U7POatFwcpg7B8SnQltmqpmhURmA3AKOGg+lHRkJloqZqZjUakM+a0stTRzwRwBngHTgA6lDkZpdgZ4XwYTKY9pFAA3zcqRUUB8w1nSpbkcmczRyKab1YUzMxW4BNyqD9UsStdKvs+MAY4aoo8hTVPhHAc8SJGbvbPBrl2h3Oy4zRPzgU3A+BSIpjsFFEQ0WwG6LbgLnAWGBUpN2VizRumHjrdSTcW/NImuAFY57w8DjwoZzpoBEv+UcpoOuzoGsulmhYD5r4KG0mwS8MKcHwJsBS4CU4A39jwXmJfAD+cPaG3fSEzQeA00AKYD+82ZlsBmk2NFww9Y2sUpmorM3BgR8LojzMtE0dSZnsBwc0aKyQzTtGR0NLAeOAZsN/15t2dmV9EIFQGLqpv1AeSooiQWcNKcbgNsA/oCjexcefDUHGKfCOjbW7TIRP/RxpYCqmYbAZXrL+bNZGANsBeo9Ah+PqfjniUCRsYVlYz8oxu0scAV80qcTu/U3JRa50IQRPYmCmYZsAgYBKiBLbd+8MuuNKTiqz/oQmoB8C0QVNHAKG3eRpzpYod5jz0bbEr91Qhf0quOwEjgDiBxPGQNAL6bXaV5xpbvG9Uh3CzEiTT2VoWA8d02p+G0a7Mt0BwIAhPSH5IEqXOlIlMLjAjdX9Jm3jQBNHdruWcmSYez2dK56uyCqSvO/asfNZGRIlgf1vk/wq8f3Lv77GsAAAAASUVORK5CYII="
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#camera"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Câmeras fotográrficas
-                  </a>
-    </div>
-    <div class="col-2 bl">
-      <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 51 50"
-                      width="51"
-                      height="50"
-                    >
-                      <title>radio</title>
-                      <defs>
-                        <image
-                          width="51"
-                          height="50"
-                          id="radio"
-                          href="data:image/png;base64,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"
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#radio"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Rádios
-                  </a>
-    </div>
-    <div class="col-2 bl">
-      <a
-      class="nav-link d-flex flex-column align-items-center"
-      href="#"
-    >
-    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 49" width="51" height="49">
-      <title>typewritter</title>
-      <defs>
-        <image width="51" height="49" id="typewritter" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAxCAYAAAB3aZEhAAAAAXNSR0IArs4c6QAABT5JREFUaEPtmVeIHlUUx3+xo1hRsWGFYEGNYnsQy4M+KKJBRRJJ7L1GRcTeHgIKGhV7iQ+KoBKDBfFBI/igYokgFrD33rBi5Tecs8wO3+yOmdnd74PvwrKzM/eec/739LPTaL5WArZtvr2Tnb8BbzelNK3pRmBz4P3/sb+Lra8BM5oSWhYwawM/NGXQYt/RwNlDMA1uMM1sqJkGl1XdMjSzNcPRHgGMHnVrIMzsLOB64G/gWuAKwPheXQMBZhXgIuB8wMT4DnAS8HQFzUCASZm3Bu4A9owX9wDnAt/H3wMFRpmXAy4Arornk4HbBhVMamkpsCNwDLBwCGYZEkvlSGd5ZqiZ9soYRaGVZswxhwW5jYAVgW+Bn+PdCsDGwKbAxx0L3ovcTcAJwOfj8DoReMo9tgCXx+bpwKwGQhqiP2ywr+2WO4HjGhA5B7CKKcD8GwceBg4FXgfu6kFkHeASYAPgywZM2m65EDgNuKaG0HXx/kbgjDowi4FDehDot6SZSmgFxtv6te21NzhvJbLLGJ1mKzAGhScaCNHlFocZR9QQbAWmSyG7oNUTTE4/jApzgDqf6UKALmkkGGU2aBXRLJc12FHAX8AvXXKdIFpFOAZmAjaWo8DcC8ydIMYTSfZw4KEqmMeBA4A/JylatQW4RihjXnTKozTzPLA7YFN2bFtOk3D+ZWBnYEHMMEaBsV3eKlCK1rVuzAV8trzwsD8fxd9Xxr75kWjtVl8BngPOjG+XxrO0fO/Z2fHtVODmeNbuVwX2D8vwnPVi8pa2ucfzfrsv6IwErHIA+AlYPQYaWa+V58s2alYGB8cUx6r21WC2b9R4e0c0NJgsim87hYNuBuiXthdZijhQzLbcQcpagAOWHyNZ5mxb3vtEgMr5szJeFrIUETnBrAz8HsxHbBCwUlaIDYHvYmpjjeb7LwCHIesBX8d56zaj4TfAaoB7reP0Q5OuUx/peGkK/hnwD7AJ4GUKQoBqSPrKl7yNsGpX3lbtglM7npHWCBgZfRpgrFTvLtn8WNpxsP1MSTuOrGy3Vb1mo/+5tgiNGE618Q9K2ikXu16k/Oq0U7YM5Xwp6Bcj49SMakqTsaexgs61PnB7/HFDBAkDhSZgdX11fLs4SnYFfyF+0m/sOTQttfUo8FWpvFfAIk8EPfkdFLlOcHW8NTG14tKUlyaY/bLBAXx2SuM/ljQfG58j45DxfI8wi0/iAmTsUuU+GzLfiLP6kOsW4JR4Nmpq1grwR1hBfpOXJteLt5fgGb/LW1ls3DTtInEmGJuy+4PZbtFHWA3obHWO/mxEvraOrlllEKg6epm3AmvWXpC89Rl/7wUUfp5gbG40IZchUHOwPVaNhlqjlcvQ6ncdUSd/N8zOb/qO5qfzGj49u32cMyEfGM9vRUtuGjAwqI38Ji9p9+Kt6XomeSuLQ8vjM9ckGO3eEa3L6LFDSdWaj8v4P1Wmp9m69OeymZ0XnWiRaxLMrTFf9oA3q42nmWVVnYXoVJheDiKXVMzMnJf/vZiRYB4M1OYIpzJm+VR1ht7yu8k2Pc3WZQVQNjNN/s3MNQkmHcnRkpur6/TSGKrH50l5pW9YcpWXF28iXt5km2C0yW2A98LJqtKZDE1kU7mKXNJDAIPQlobtBGMSsyxxs4cGaWXrMlMw/ugrJkrrn6oq+x2Yvm05M08gFmmZtPpd8LHkmy8YkeW41cT05IAhskqwsl8gGB0/k9JI1zZAgDL3LBTMrsCLIfxjNXPmfsZm9bId8IBgLNgyMfaz0OPJtlgw9hNZ+Y53oJ+/L/kPyi6LuA6HsdoAAAAASUVORK5CYII="/>
-      </defs>
-      <style>
-      </style>
-      <use id="Vector Smart Object" href="#typewritter" transform="matrix(1,0,0,1,0,0)"/>
-    </svg>
-      Maquina de escrever
-    </a>
-    </div>
-    <div class="col-2 bl">
-      <a
-      class="nav-link d-flex flex-column align-items-center"
-      href="#"
-    >
-    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 43" width="35" height="43">
-      <title>vase</title>
-      <defs>
-        <image width="35" height="43" id="vase" href="data:image/png;base64,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"/>
-      </defs>
-      <style>
-      </style>
-      <use id="Vector Smart Object" href="#vase" transform="matrix(1,0,0,1,0,0)"/>
-    </svg>
-      Decoração
-    </a>
-    </div>
-  </div>
-</div>
-</div>
-    <!-- Navbar-->
-    <!--
-    <nav class="navbar navbar-expand-lg bg-primary color-black">
+    <div class="w-100 bg-primary p-3 mb-5">
       <div class="container">
-        <div class="row w-100">
-          <div class="col-2">
+        <div class="row">
+          <div class="col-2 d-flex align-items-center">
             <a class="nav-link p-2" href="#">
               <svg
                 version="1.2"
@@ -309,140 +154,635 @@
               Categorias
             </a>
           </div>
-          <div class="col-10">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav w-100">
-                <li class="nav-item bl">
-                  <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50 48"
-                      width="50"
-                      height="48"
-                    >
-                      <title>bicycle</title>
-                      <defs>
-                        <image
-                          width="50"
-                          height="48"
-                          id="bicycle"
-                          href="data:image/png;base64,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"
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#bicycle"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Bicicleta
-                  </a>
-                </li>
-                <li class="nav-item bl">
-                  <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 51 48"
-                      width="51"
-                      height="48"
-                    >
-                      <title>camera</title>
-                      <defs>
-                        <image
-                          width="51"
-                          height="48"
-                          id="camera"
-                          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAYAAAC8NUKEAAAAAXNSR0IArs4c6QAAA3BJREFUaEPtmVmojVEUx3/3QSkZiwfK8CLDC+VFmfLggQdDSuahjEmGW17MUgplzlCGB5ISNxQSQsisW2aRzBLJTNH/to6+u9vfOWc7zvfdczv78fv2+db6n7X2Wv/13xXAE/JbA4Hb+W1NZ1cF8DtP092Bm3nuTWVbFMwOoNrxogWw0J6VFJihwCEHTHvgcRlMCokWTbNckbkPfHV8vAeMSMFvr8kQMIuBp5Gv9AJ6AN1KEYxbACYAK4EtMWCWJA0yJDI+MOuA047TTYF+gL6d6CoUzGxPmintbtQ3MFUxYZkTKfe5IjcL6G+b1CL029hVzMgs9VhVEQlpvruATsArQD0va7EpJhjfmRF1Wg089wA94eF+AvPBaJQvpWt9Jg0w14BPDhiV+JmAnI+uOg/Gl2YisA0tnaJglGL76nJk4sBovLjsRGYUcMHAzAN6O+8/Az8zz9JIszgwa3Ok2U7POatFwcpg7B8SnQltmqpmhURmA3AKOGg+lHRkJloqZqZjUakM+a0stTRzwRwBngHTgA6lDkZpdgZ4XwYTKY9pFAA3zcqRUUB8w1nSpbkcmczRyKab1YUzMxW4BNyqD9UsStdKvs+MAY4aoo8hTVPhHAc8SJGbvbPBrl2h3Oy4zRPzgU3A+BSIpjsFFEQ0WwG6LbgLnAWGBUpN2VizRumHjrdSTcW/NImuAFY57w8DjwoZzpoBEv+UcpoOuzoGsulmhYD5r4KG0mwS8MKcHwJsBS4CU4A39jwXmJfAD+cPaG3fSEzQeA00AKYD+82ZlsBmk2NFww9Y2sUpmorM3BgR8LojzMtE0dSZnsBwc0aKyQzTtGR0NLAeOAZsN/15t2dmV9EIFQGLqpv1AeSooiQWcNKcbgNsA/oCjexcefDUHGKfCOjbW7TIRP/RxpYCqmYbAZXrL+bNZGANsBeo9Ah+PqfjniUCRsYVlYz8oxu0scAV80qcTu/U3JRa50IQRPYmCmYZsAgYBKiBLbd+8MuuNKTiqz/oQmoB8C0QVNHAKG3eRpzpYod5jz0bbEr91Qhf0quOwEjgDiBxPGQNAL6bXaV5xpbvG9Uh3CzEiTT2VoWA8d02p+G0a7Mt0BwIAhPSH5IEqXOlIlMLjAjdX9Jm3jQBNHdruWcmSYez2dK56uyCqSvO/asfNZGRIlgf1vk/wq8f3Lv77GsAAAAASUVORK5CYII="
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#camera"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Câmeras fotográrficas
-                  </a>
-                </li>
-                <li class="nav-item bl">
-                  <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    <svg
-                      version="1.2"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 51 50"
-                      width="51"
-                      height="50"
-                    >
-                      <title>radio</title>
-                      <defs>
-                        <image
-                          width="51"
-                          height="50"
-                          id="radio"
-                          href="data:image/png;base64,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"
-                        />
-                      </defs>
-                      <style></style>
-                      <use
-                        id="Vector Smart Object"
-                        href="#radio"
-                        transform="matrix(1,0,0,1,0,0)"
-                      />
-                    </svg>
-                    Rádios
-                  </a>
-                </li>
-                <li class="nav-item bl">
-                  <a
-                    class="nav-link d-flex flex-column align-items-center"
-                    href="#"
-                  >
-                    Decoração
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div class="col-2 bl">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 48"
+                width="50"
+                height="48"
+              >
+                <title>bicycle</title>
+                <defs>
+                  <image
+                    width="50"
+                    height="48"
+                    id="bicycle"
+                    href="data:image/png;base64,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"
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Vector Smart Object"
+                  href="#bicycle"
+                  transform="matrix(1,0,0,1,0,0)"
+                />
+              </svg>
+              Bicicleta
+            </a>
+          </div>
+          <div class="col-2 bl">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 51 48"
+                width="51"
+                height="48"
+              >
+                <title>camera</title>
+                <defs>
+                  <image
+                    width="51"
+                    height="48"
+                    id="camera"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAYAAAC8NUKEAAAAAXNSR0IArs4c6QAAA3BJREFUaEPtmVmojVEUx3/3QSkZiwfK8CLDC+VFmfLggQdDSuahjEmGW17MUgplzlCGB5ISNxQSQsisW2aRzBLJTNH/to6+u9vfOWc7zvfdczv78fv2+db6n7X2Wv/13xXAE/JbA4Hb+W1NZ1cF8DtP092Bm3nuTWVbFMwOoNrxogWw0J6VFJihwCEHTHvgcRlMCokWTbNckbkPfHV8vAeMSMFvr8kQMIuBp5Gv9AJ6AN1KEYxbACYAK4EtMWCWJA0yJDI+MOuA047TTYF+gL6d6CoUzGxPmintbtQ3MFUxYZkTKfe5IjcL6G+b1CL029hVzMgs9VhVEQlpvruATsArQD0va7EpJhjfmRF1Wg089wA94eF+AvPBaJQvpWt9Jg0w14BPDhiV+JmAnI+uOg/Gl2YisA0tnaJglGL76nJk4sBovLjsRGYUcMHAzAN6O+8/Az8zz9JIszgwa3Ok2U7POatFwcpg7B8SnQltmqpmhURmA3AKOGg+lHRkJloqZqZjUakM+a0stTRzwRwBngHTgA6lDkZpdgZ4XwYTKY9pFAA3zcqRUUB8w1nSpbkcmczRyKab1YUzMxW4BNyqD9UsStdKvs+MAY4aoo8hTVPhHAc8SJGbvbPBrl2h3Oy4zRPzgU3A+BSIpjsFFEQ0WwG6LbgLnAWGBUpN2VizRumHjrdSTcW/NImuAFY57w8DjwoZzpoBEv+UcpoOuzoGsulmhYD5r4KG0mwS8MKcHwJsBS4CU4A39jwXmJfAD+cPaG3fSEzQeA00AKYD+82ZlsBmk2NFww9Y2sUpmorM3BgR8LojzMtE0dSZnsBwc0aKyQzTtGR0NLAeOAZsN/15t2dmV9EIFQGLqpv1AeSooiQWcNKcbgNsA/oCjexcefDUHGKfCOjbW7TIRP/RxpYCqmYbAZXrL+bNZGANsBeo9Ah+PqfjniUCRsYVlYz8oxu0scAV80qcTu/U3JRa50IQRPYmCmYZsAgYBKiBLbd+8MuuNKTiqz/oQmoB8C0QVNHAKG3eRpzpYod5jz0bbEr91Qhf0quOwEjgDiBxPGQNAL6bXaV5xpbvG9Uh3CzEiTT2VoWA8d02p+G0a7Mt0BwIAhPSH5IEqXOlIlMLjAjdX9Jm3jQBNHdruWcmSYez2dK56uyCqSvO/asfNZGRIlgf1vk/wq8f3Lv77GsAAAAASUVORK5CYII="
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Vector Smart Object"
+                  href="#camera"
+                  transform="matrix(1,0,0,1,0,0)"
+                />
+              </svg>
+              Câmeras fotográrficas
+            </a>
+          </div>
+          <div class="col-2 bl">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 51 50"
+                width="51"
+                height="50"
+              >
+                <title>radio</title>
+                <defs>
+                  <image
+                    width="51"
+                    height="50"
+                    id="radio"
+                    href="data:image/png;base64,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"
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Vector Smart Object"
+                  href="#radio"
+                  transform="matrix(1,0,0,1,0,0)"
+                />
+              </svg>
+              Rádios
+            </a>
+          </div>
+          <div class="col-2 bl">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 51 49"
+                width="51"
+                height="49"
+              >
+                <title>typewritter</title>
+                <defs>
+                  <image
+                    width="51"
+                    height="49"
+                    id="typewritter"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAxCAYAAAB3aZEhAAAAAXNSR0IArs4c6QAABT5JREFUaEPtmVeIHlUUx3+xo1hRsWGFYEGNYnsQy4M+KKJBRRJJ7L1GRcTeHgIKGhV7iQ+KoBKDBfFBI/igYokgFrD33rBi5Tecs8wO3+yOmdnd74PvwrKzM/eec/739LPTaL5WArZtvr2Tnb8BbzelNK3pRmBz4P3/sb+Lra8BM5oSWhYwawM/NGXQYt/RwNlDMA1uMM1sqJkGl1XdMjSzNcPRHgGMHnVrIMzsLOB64G/gWuAKwPheXQMBZhXgIuB8wMT4DnAS8HQFzUCASZm3Bu4A9owX9wDnAt/H3wMFRpmXAy4Arornk4HbBhVMamkpsCNwDLBwCGYZEkvlSGd5ZqiZ9soYRaGVZswxhwW5jYAVgW+Bn+PdCsDGwKbAxx0L3ovcTcAJwOfj8DoReMo9tgCXx+bpwKwGQhqiP2ywr+2WO4HjGhA5B7CKKcD8GwceBg4FXgfu6kFkHeASYAPgywZM2m65EDgNuKaG0HXx/kbgjDowi4FDehDot6SZSmgFxtv6te21NzhvJbLLGJ1mKzAGhScaCNHlFocZR9QQbAWmSyG7oNUTTE4/jApzgDqf6UKALmkkGGU2aBXRLJc12FHAX8AvXXKdIFpFOAZmAjaWo8DcC8ydIMYTSfZw4KEqmMeBA4A/JylatQW4RihjXnTKozTzPLA7YFN2bFtOk3D+ZWBnYEHMMEaBsV3eKlCK1rVuzAV8trzwsD8fxd9Xxr75kWjtVl8BngPOjG+XxrO0fO/Z2fHtVODmeNbuVwX2D8vwnPVi8pa2ucfzfrsv6IwErHIA+AlYPQYaWa+V58s2alYGB8cUx6r21WC2b9R4e0c0NJgsim87hYNuBuiXthdZijhQzLbcQcpagAOWHyNZ5mxb3vtEgMr5szJeFrIUETnBrAz8HsxHbBCwUlaIDYHvYmpjjeb7LwCHIesBX8d56zaj4TfAaoB7reP0Q5OuUx/peGkK/hnwD7AJ4GUKQoBqSPrKl7yNsGpX3lbtglM7npHWCBgZfRpgrFTvLtn8WNpxsP1MSTuOrGy3Vb1mo/+5tgiNGE618Q9K2ikXu16k/Oq0U7YM5Xwp6Bcj49SMakqTsaexgs61PnB7/HFDBAkDhSZgdX11fLs4SnYFfyF+0m/sOTQttfUo8FWpvFfAIk8EPfkdFLlOcHW8NTG14tKUlyaY/bLBAXx2SuM/ljQfG58j45DxfI8wi0/iAmTsUuU+GzLfiLP6kOsW4JR4Nmpq1grwR1hBfpOXJteLt5fgGb/LW1ls3DTtInEmGJuy+4PZbtFHWA3obHWO/mxEvraOrlllEKg6epm3AmvWXpC89Rl/7wUUfp5gbG40IZchUHOwPVaNhlqjlcvQ6ncdUSd/N8zOb/qO5qfzGj49u32cMyEfGM9vRUtuGjAwqI38Ji9p9+Kt6XomeSuLQ8vjM9ckGO3eEa3L6LFDSdWaj8v4P1Wmp9m69OeymZ0XnWiRaxLMrTFf9oA3q42nmWVVnYXoVJheDiKXVMzMnJf/vZiRYB4M1OYIpzJm+VR1ht7yu8k2Pc3WZQVQNjNN/s3MNQkmHcnRkpur6/TSGKrH50l5pW9YcpWXF28iXt5km2C0yW2A98LJqtKZDE1kU7mKXNJDAIPQlobtBGMSsyxxs4cGaWXrMlMw/ugrJkrrn6oq+x2Yvm05M08gFmmZtPpd8LHkmy8YkeW41cT05IAhskqwsl8gGB0/k9JI1zZAgDL3LBTMrsCLIfxjNXPmfsZm9bId8IBgLNgyMfaz0OPJtlgw9hNZ+Y53oJ+/L/kPyi6LuA6HsdoAAAAASUVORK5CYII="
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Vector Smart Object"
+                  href="#typewritter"
+                  transform="matrix(1,0,0,1,0,0)"
+                />
+              </svg>
+              Maquina de escrever
+            </a>
+          </div>
+          <div class="col-2 bl">
+            <a class="nav-link d-flex flex-column align-items-center" href="#">
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 35 43"
+                width="35"
+                height="43"
+              >
+                <title>vase</title>
+                <defs>
+                  <image
+                    width="35"
+                    height="43"
+                    id="vase"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAArCAYAAADyijE0AAAAAXNSR0IArs4c6QAABa9JREFUWEetmHXsHVUQhb/iBAmlSHFawh84BRLcaUIoFCe4BwohENwlQYMWaUmDBCmWIgWKu7s7wS24Btd8L3Ob5Xbf7r63vUnT/N5eOTtz5sy5O4DqcS0wuGZOP4/3BN7JFw6o2ekDYJF+TqtZMwx4sVcwrwJLAc8Aj7cENS+wbezhC37UK5ibgM2Aa4DtW4LZEbgS+A2YHfizVzDHAycAbwBLtgQzFtgHeAxYo2yvOs5sBUwA/gKmbwnmOWAF4AzgsH7ArAM8EAtnBX5uAehzQN7sAVzaD5gRwKRYOCPwRwswPwG+0NbA9f2A2QsYB3wPDGwBxKVfAXMB+wIX9gPmCmCnKtL1APBZYEXgHOCgXsFMB3wSeT4ROK6Hg8umGo1RgNq1TK9gFCj1xeFiN2kzNgFuiQ2WB15qqjMzxeGLRTWt1wZFrJ0B+DB6nT1vu6ZgkkD9C6wGPDkVwLjFocDpsdcGwH3FfctEbxfgsph0HnDAVALiNsWIfwwsB3yX9s/BLB65nBl4ClirobbYhV8Jpa7DvirwCDBt6I260xk5mPuBdYFvgWWBT+t2jqYnudWjkxvMd8oRwKkxdyRwaw5mQ+COmLBzdNgme18EWCmKomF/s8GiaSLyK0UTXhr4pxiZFJUXwi78UuY5soOM4t2AoT8QsPpWB/6uATQ8LETqe5sDExMYN0k2cAdg/0jVRhWb2mfkydXA0cCgeEu7sv+6DVVYPlraKvEqkaaRCUwquR8jlwcDNkZBpcrKNx8DrB+p+T0eSkYNlHx7uwSNNkTXOFs0zdOAswHXD0pgJNDGwO1BYMvbpibJtJ0SWdFKXXvNEENNUq5B+h9N/NryIHxQcnUatd3jBeSn+24RoIcnMP44P/Ae8Hy0eZ/JI6O1KWAkHgRui/KfGCKWB2DuSNdJwPkhbPYkNcaouJcvvUSYch3BPMDhHuikX2NHPYda80X8PSR4cS5wVPwuCNuDqdDPlg15Z5WNBo4EngZsvHJs18ICuXZsUGKcYOYDPosJPjwl213+KOGWo8MWYQoUrqpxT4BO634AFg1vlNYJUAco+ScIxgnvx1PLMr+SbJk5M3lgKhTGqiGRvRGk8XWsy9eYOvVmkmDmBL6JGTfH1aS4wOuKRJXQDt/Q0q1SW68ir0X4Be4LGNGc8AuHpFhl4wVjj5Az/qBYqS0KmcNSvTwqTC+sIGqStAA6fQ8sG/JlZUDb6tXkzACmyutl5Jpn3xVRUb1Hp2pKN0dTtACgPNssX48ISESrwCupnuSqCrVVe+4MVdZqWklqldwRvGZcXfO+rcY41J1RCczFcYVQGVXWh6LcFgo/Y5iLQ8K58VmZ2uaqnEfN9iGx5aERt/SPiUnDEphtgOsirzY9uePFzZB2a3xe8MZnc9Qi71qmMKlyDsg53hAEJXmVDG8OgxMYU/JlRMXSVm39u6rHeIhqqzToe/x3bwlJczBGzwx4hzcDrhfgfsWurbDZi6wWW4D1X9d9rRR55fVjNztvF1XOAc0S4ndBPOgY/iIY+WFzU5G9fnoNbTLsvnbutwqVUrdOmTD9cs8X0EJM4fRsZH55SGVdeg0tOenGqIxH61DEmcqEEmLjNQsd+5LbTrliF9bTqj2y3/zWDTVqiu8tXRZZzhoxxyFRkZ0/ym4HNkcbm6G0Y1tdD9ehafDcs5SCBOSGEFWVuSsYH6ieqnD6wqSBVvhyvWmAoTNFi6CuqMAO7aZfOJJbqATjQ+2h5FowNngiPvI04UUCqWTsHTycI36UXzbQ/wHplqbi2+rYLgmypd/lkGKnU3u3JDRWo75WHdHXpAYrWfUuatfk1BTX131GS3P9CGCXHpodrkuzV/m/5DcdWhKbb3Go6H46K/PFk+c1BeMCjZB6oLjZDD28aiiaKrR97+Um5OoFTHE/Jd3+46XNLm9qHBooP2RrNbrZi664/gNBkTrAv/O8dgAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Vector Smart Object"
+                  href="#vase"
+                  transform="matrix(1,0,0,1,0,0)"
+                />
+              </svg>
+              Decoração
+            </a>
           </div>
         </div>
       </div>
-    </nav>
-    -->
-    <!--Content-->
+    </div>
+    <!-- /Header-->
 
-    <!--Footer-->
-    <footer class="fixed-bottom">
+    <!-- Content -->
+
+    <main>
+      <section>
+        <div class="container mb-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://via.placeholder.com/1296x303" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="http://via.placeholder.com/1296x303" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="http://via.placeholder.com/1296x303" alt="" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 50" width="26" height="50">
+                <title>next</title>
+                <defs>
+                  <image width="49" height="50" id="prev" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAyCAYAAAD1CDOyAAAAAXNSR0IArs4c6QAABGNJREFUaEPdmV1sU2UYx//POW3PKVPYxI8ZTZQ0Rr3QxBsjXxoJKJnEAJEFnVvZKMVBNhSj61k0HoL7VpKB4rrqOvYBWCQmaHDRREhEvfBKozEqF5IAJhpjlyBrt/Y85rQszrHR0649b+e56sVz3vP/9fl63+clFPAZ6HruZk4mj0qUrK9u6vupUJ+iQi1srnuodedixngjAVUGyatrtZ5fC/G9gkKYgoc6fLcbBrUwYaXB8qpCgBQcwgQJd26/S0oYB0Aod8edKyr1g5fy6RFbIFKh1eJ/FGR0gigRI1q7PdA7mi8Q2yD2729QFv4d203AXgA/JDmxuq45/Ec+QGyDMMUOdPjuZYPeAfAIQN+7446l+QgtWyEikU1y/OyiZQbREQC3Afh8tEStaGw8EJ+LR2yFMIXqui7dqV58k5jrASgATo6WqBvnAmI7BDNosG3bw0x8FKDyKx446fZEn6ysPJbMxSO2Q5gi39239QZHTHqbCJv/FU3vuz1/VeUCIgTCDKklrgsVIHw09Z8n8Ei0xL0+29ASAmEKP/yG/8aJCeMEQEvnCiIM4pSuO84p5+sIFJyeB9l6RBiEKXywo+5uw5BPAbh1LiBCIcL6llJJcQ4DqJilKlkqv0IhIvtecI/FL70GoOkapTUjiFCIYNDvVP40niWivgz94YTbE904W/kVCpFufP4HmfgMAMe1QWjIq/VWz2QjFMIU1Ndae5NM8o8ALbbQrTu8WihwdRGw8GYhTQa6qks4oX4F4H4r3yFgWPVEvVNDS7gngrp/garwEIANViDSNv8NLeEQYX2LKiuODgY1WodIgezxar166ld2L+bfOqJvco0pizSAUoKyeog0b6C3vVggdgHUmRXApDHjxaKAuOwqbSRCVy4QDDQXBURMLQ0wY0/WEITnvYFQt3AIM7ElxdkOYFc2EMR4vaY59GpRJPb/osRG9B3XjSkTX87rZpc+4fHPAMoshNNbXi3UUHTbjv5Ov4eSKQgpA8QRrxZ6pug2gObA4A7lt8ckGJ9kAPjY7YmuL8qteKpbq6VtYOyeDcLKeVtoiR3SGxYaSuwMA/fNHCbWRjhCIcKt/nsk4m8BuK5OVh5JxhMbavX+WKaEFwZhDpcvny3bScTd00Uy47MF49F1lfqx8UwAQpudeRhCQv16hlD61KuFHrciftJGmCcOtftXgPmLaWI/dMejm616QChEaqvh4jAIlVOEHK/RQk9l4wGhEIOtvpUGkTn5k9MxzSOqZ3RdLhNxITmRmogrF8wz9dOTALlMwqd6zPacGGzftsxgnAbgJOB0tERdm+0oX+jeKdy5o1xKTnwAYDkB36hx56p5dfGYPvy4AgCbs9fvyCGvqXmp5/dcElmYJ/rb/U8Qcw+A8/PyMn5gr28JOzAMSNfn6+7a1sS+kgcHATyQkJLLtzb1XcxHCNkGMdxWX5ZAohvgNY4kP1T1ynvn8g1Q8D5xuMV3y4RExw1Zqq19OfhLIQDMNf8Bcq+pRciiCsQAAAAASUVORK5CYII="/>
+                </defs>
+                <style>
+                </style>
+                <use id="Rectangle 19 copy 4" href="#prev" transform="matrix(-1,0,0,1,49,0)"/>
+              </svg>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 50" width="26" height="50">
+                <title>next</title>
+                <defs>
+                  <image  width="1280" height="720" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABQAAAALQAQMAAAD1s08VAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAACHSURBVHic7cExAQAAAMKg9U9tCU+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgaxN8AAQfAspoAAAAASUVORK5CYII="/>
+                  <image width="49" height="50" id="next" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAyCAYAAAD1CDOyAAAAAXNSR0IArs4c6QAABGNJREFUaEPdmV1sU2UYx//POW3PKVPYxI8ZTZQ0Rr3QxBsjXxoJKJnEAJEFnVvZKMVBNhSj61k0HoL7VpKB4rrqOvYBWCQmaHDRREhEvfBKozEqF5IAJhpjlyBrt/Y85rQszrHR0649b+e56sVz3vP/9fl63+clFPAZ6HruZk4mj0qUrK9u6vupUJ+iQi1srnuodedixngjAVUGyatrtZ5fC/G9gkKYgoc6fLcbBrUwYaXB8qpCgBQcwgQJd26/S0oYB0Aod8edKyr1g5fy6RFbIFKh1eJ/FGR0gigRI1q7PdA7mi8Q2yD2729QFv4d203AXgA/JDmxuq45/Ec+QGyDMMUOdPjuZYPeAfAIQN+7446l+QgtWyEikU1y/OyiZQbREQC3Afh8tEStaGw8EJ+LR2yFMIXqui7dqV58k5jrASgATo6WqBvnAmI7BDNosG3bw0x8FKDyKx446fZEn6ysPJbMxSO2Q5gi39239QZHTHqbCJv/FU3vuz1/VeUCIgTCDKklrgsVIHw09Z8n8Ei0xL0+29ASAmEKP/yG/8aJCeMEQEvnCiIM4pSuO84p5+sIFJyeB9l6RBiEKXywo+5uw5BPAbh1LiBCIcL6llJJcQ4DqJilKlkqv0IhIvtecI/FL70GoOkapTUjiFCIYNDvVP40niWivgz94YTbE904W/kVCpFufP4HmfgMAMe1QWjIq/VWz2QjFMIU1Ndae5NM8o8ALbbQrTu8WihwdRGw8GYhTQa6qks4oX4F4H4r3yFgWPVEvVNDS7gngrp/garwEIANViDSNv8NLeEQYX2LKiuODgY1WodIgezxar166ld2L+bfOqJvco0pizSAUoKyeog0b6C3vVggdgHUmRXApDHjxaKAuOwqbSRCVy4QDDQXBURMLQ0wY0/WEITnvYFQt3AIM7ElxdkOYFc2EMR4vaY59GpRJPb/osRG9B3XjSkTX87rZpc+4fHPAMoshNNbXi3UUHTbjv5Ov4eSKQgpA8QRrxZ6pug2gObA4A7lt8ckGJ9kAPjY7YmuL8qteKpbq6VtYOyeDcLKeVtoiR3SGxYaSuwMA/fNHCbWRjhCIcKt/nsk4m8BuK5OVh5JxhMbavX+WKaEFwZhDpcvny3bScTd00Uy47MF49F1lfqx8UwAQpudeRhCQv16hlD61KuFHrciftJGmCcOtftXgPmLaWI/dMejm616QChEaqvh4jAIlVOEHK/RQk9l4wGhEIOtvpUGkTn5k9MxzSOqZ3RdLhNxITmRmogrF8wz9dOTALlMwqd6zPacGGzftsxgnAbgJOB0tERdm+0oX+jeKdy5o1xKTnwAYDkB36hx56p5dfGYPvy4AgCbs9fvyCGvqXmp5/dcElmYJ/rb/U8Qcw+A8/PyMn5gr28JOzAMSNfn6+7a1sS+kgcHATyQkJLLtzb1XcxHCNkGMdxWX5ZAohvgNY4kP1T1ynvn8g1Q8D5xuMV3y4RExw1Zqq19OfhLIQDMNf8Bcq+pRciiCsQAAAAASUVORK5CYII="/>
+                </defs>
+                <style>
+                </style>
+                <use id="Background" href="#img1" x="-629" y="-317"/>
+                <use id="Rectangle 19 copy 4" href="#next" transform="matrix(1,0,0,1,-23,0)"/>
+              </svg>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mb-5">
+          <header
+            class="section-header w-100 border-bottom border-dark mb-4 d-flex flex-row justify-content-between"
+          >
+            <h2 class="section-title fw-bolder fs-4">Destaques</h2>
+            <a
+              href="#"
+              class="color-black text-decoration-none font-roboto fs-4 fw-lighter"
+              >Ver mais destaques
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 13 26"
+                width="13"
+                height="26"
+              >
+                <title>triangle</title>
+                <defs>
+                  <image
+                    width="14"
+                    height="26"
+                    id="triangle"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAAAXNSR0IArs4c6QAAAJxJREFUOE+d1L0RwjAMBeDnjTICjEKRKag5hqDIsVFGMQNgc8IHcfynp6hSoe+kQpIDgOU2T5frY5WcDSeFz/vsQ8DJgn8wwsGHN84s3qC0NuA9NOAakrgNCdyHCh7DAdZhB3OwgXlYYBvMsB0CL9lrK/wi2WcL/KM0cTqrqNzhDrGwQgxsIg120QgOUQ+qqAUpVEIa5fDYezzykD//wcGNL7CXYwAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Rectangle 25"
+                  href="#triangle"
+                  transform="matrix(1,0,0,1,-1,0)"
+                />
+              </svg>
+            </a>
+          </header>
+          <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mb-5">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <a href="#">
+                <img src="http://via.placeholder.com/636x303" alt="" />
+              </a>
+            </div>
+            <div class="col">
+              <a href="#">
+                <img src="http://via.placeholder.com/636x303" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container mb-5">
+          <header
+            class="section-header w-100 border-bottom border-dark mb-4 d-flex flex-row justify-content-between"
+          >
+            <h2 class="section-title fw-bolder fs-4">Os mais buscados</h2>
+            <a
+              href="#"
+              class="color-black text-decoration-none font-roboto fs-4 fw-lighter"
+              >Ver mais Produtos
+              <svg
+                version="1.2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 13 26"
+                width="13"
+                height="26"
+              >
+                <title>triangle</title>
+                <defs>
+                  <image
+                    width="14"
+                    height="26"
+                    id="triangle"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAaCAYAAACHD21cAAAAAXNSR0IArs4c6QAAAJxJREFUOE+d1L0RwjAMBeDnjTICjEKRKag5hqDIsVFGMQNgc8IHcfynp6hSoe+kQpIDgOU2T5frY5WcDSeFz/vsQ8DJgn8wwsGHN84s3qC0NuA9NOAakrgNCdyHCh7DAdZhB3OwgXlYYBvMsB0CL9lrK/wi2WcL/KM0cTqrqNzhDrGwQgxsIg120QgOUQ+qqAUpVEIa5fDYezzykD//wcGNL7CXYwAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+                <style></style>
+                <use
+                  id="Rectangle 25"
+                  href="#triangle"
+                  transform="matrix(1,0,0,1,-1,0)"
+                />
+              </svg>
+            </a>
+          </header>
+          <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section">
+        <div class="container mb-5">
+
+          <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="flex-fill">
+              <img
+                src="https://via.placeholder.com/770x377"
+                class=""
+                alt="..."
+              />
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto do produto Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/400"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body p-3">
+                  <p class="card-text text-center">Título do produto</p>
+                </div>
+                <div class="card-footer color-primary text-center bg-white p-3">
+                  <span class="price fw-bold">R$70,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- /Content -->
+
+    <!-- Footer -->
+    <footer class="">
       <div class="footer-top bg-gray color-primary pt-3 pb-3">
         <div class="container">
           <div class="row">
             <div class="col-2">
               <h5>Acompanhe-nos nas redes sociais</h5>
             </div>
-            <div class="col-10">
-              <div class="social-bar"></div>
+            <div class="col-10 d-flex align-items-center">
+              <div class="social-bar">
+                <nav class="nav d-flex flex-row align-items-center">
+                  <a href="#" class="p-2">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 35 29"
+                      width="35"
+                      height="29"
+                    >
+                      <title>twitter</title>
+                      <style>
+                        .s0 {
+                          fill: #a18866;
+                        }
+                      </style>
+                      <path
+                        id="twitter"
+                        class="s0"
+                        d="m10.8 28.3c-4 0-7.7-1.2-10.8-3.2q0.8 0.1 1.7 0.1c3.3 0 6.3-1.2 8.7-3.1-3.1-0.1-5.7-2.1-6.6-5q0.7 0.1 1.4 0.1 0.9 0 1.8-0.2c-3.2-0.7-5.6-3.6-5.6-7q0-0.1 0-0.1c0.9 0.5 2 0.8 3.2 0.9-1.9-1.3-3.2-3.5-3.2-6 0-1.3 0.4-2.5 1-3.6 3.5 4.4 8.7 7.2 14.5 7.5q-0.2-0.8-0.2-1.6c0-4 3.2-7.2 7.1-7.2 2 0 3.8 0.9 5.1 2.3 1.6-0.4 3.1-0.9 4.5-1.8-0.5 1.7-1.6 3.1-3.1 4q2.1-0.3 4-1.1c-0.9 1.4-2.1 2.7-3.5 3.7q0 0.4 0 0.9c0 9.5-7 20.4-20 20.4"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="p-2">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 37 27"
+                      width="37"
+                      height="27"
+                    >
+                      <title>youtube</title>
+                      <defs>
+                        <image
+                          width="37"
+                          height="27"
+                          id="youtube"
+                          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAbCAYAAAD77kbeAAAAAXNSR0IArs4c6QAAAsZJREFUWEfNl81LVFEYxn/vnbHJNLKwQoLAoi9auWhVqwiCDFpI0SIYHXV2EQiazgQOSDMGUuROp6wZocBNroKMNtVfUFBBRAkFfVCSmY6p941zx5mMrGauo84LF+7iPM/53XPvfc95hAWV6A5uF9VjtlAtsFFt1otQjlCGsg4oBdYilKD4FDyCehHxZG1sbIRZcK4f89c0yhQW30WZVGQC7G9gjYnYo3OWZ6Shre9lxkMyN4nuYDuqXYB3IeiK3atE/aH+sJnPgboZbWoQkYEVA/jLRKq01ofiPRKJRKxq37uvQPlqQ5n5U9NSJslY02FFHhQDUPrVySlJxJo6QSLFAgVclUSs+ToQKCKoOwZqGDjhAuojsMWF7j8SfWigHgGH8jUXSAp2l411BTier/4f458YqGfAPhemd/0d8VqnpXQHay3VToUDLnx+lwivDdRbYJsLsyxURuv0OySMsNOF37xE3xuoT0ClC5M/oIxHb+9ZX8XE9DlbtEVga96+ypeCQ2Ugrl1u3LQmZdWp0Arsyh1OPxso8xdtzl2UHbnoSi30GbwU2GPb3tugNbn7p6EK+vrM5IlYY41ghRXqcofJjCww1EAssMODx+z0S2jGaSi3f9+IvyN+1DzfrZ5g5cysnkdpAaz8V+eXQuGDgXoO7M3bSOSGv70/kIwG21Q0BGzI22NxwRsD9Rg46MLwBTAH7Heh/Zfk6VL2vgKzZD90Z+8rqlOCCsOSiAUjoJ3L9Nh52wraa1bqCHA/b/WyCfS0DA2d9Ey9qhgHJ0Kteok3Ve6kmWS0uVmF/tUmUgjVd8Rj2dyXjAXDil5wwuZqlNDjb4+bzTud+zI1eDFYpZaaLr3bhipJN8QyhVJRLUXEB5Qg+FDxgl0CTjo2ATbdyZW5+YRsetiMSchqkrKQEmVKlUmTlC1lXGFMkVGvyr0zoT5z2HTqJ7YnATGpLMNxAAAAAElFTkSuQmCC"
+                        />
+                      </defs>
+                      <style></style>
+                      <use
+                        id="youtube"
+                        href="#youtube"
+                        transform="matrix(1,0,0,1,0,0)"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="p-2">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 26 27"
+                      width="26"
+                      height="27"
+                    >
+                      <title>facebook</title>
+                      <defs>
+                        <image
+                          width="26"
+                          height="27"
+                          id="facebook"
+                          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAAAXNSR0IArs4c6QAAAhNJREFUSEvt1ktrE1EUB/D/uZlp0mp9oeC24EZciCCKm679AOLKzkRrIu6MWuaxcXDRSaVNIohIJtVMln4AC4L4FVwVRXERKgVdaOqjNJI5cqsJYyiamUzAhbOb1/nNPffcO4eWFy5NpjqKS8QaRnAwU2NiSzGp4eZKDBRGYPRCElAm3819ArB3lBCAloQ2AEyOGPosoRaAPUNAH0F4gQAfGAhkHCKcBHAkFHNjWOgpCBXd9FbCH+oX8yaY3aSgJ+Pp3efOXy9v9mej7uYsAuaTgN4L0ZmeMR6+2inl9WL+KjHfTwBiX7dq2W4gf2H2FAfiIoDM9hyBjgN8YmiImAzNrt6RgZ47jtJMrz0DaPoPBRWvGIi5oNm1igz8yMlmREZdB2Nf8hDopmZVl3rQmPoOhANJQAygHdpTDN307vagtPoawKEQlAKgxJmjN6pKZ7ovKmLX125ZM4OWy7P7J4KUkPe/t1UGtecAGHGgl7rlHR109/Dncw9AuBIZYmA1a3nHBoUa7uUVBp2NDAFoMomZXuqo8/aCUVuT547jiKmx9dMsoP68HxwmoAjGVBzot8EQ4ZZmerflxcelwvjm1pdvfxltvHUExg3d9kqhqmv2VV2/+x/6lZF/PXXRe4boI9ruGaJ3QdGhFtWL+TIxXxt01cvnmDGXtb3FQXdvJqpQvE6VbN2q3gv9j1bBOLjTx3Y71R9/4BP0HXhtcwAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                      <style></style>
+                      <use
+                        id="facebook"
+                        href="#facebook"
+                        transform="matrix(1,0,0,1,0,0)"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="p-2">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 27 28"
+                      width="27"
+                      height="28"
+                    >
+                      <title>instagram</title>
+                      <defs>
+                        <image
+                          width="27"
+                          height="28"
+                          id="instagram"
+                          href="data:image/png;base64,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"
+                        />
+                      </defs>
+                      <style></style>
+                      <use
+                        id="instagram"
+                        href="#instagram"
+                        transform="matrix(1,0,0,1,0,0)"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="p-2">
+                    <svg
+                      version="1.2"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      height="32"
+                    >
+                      <title>whatsapp</title>
+                      <style>
+                        .s0 {
+                          fill: #a18866;
+                        }
+                      </style>
+                      <path
+                        id="whatsapp"
+                        fill-rule="evenodd"
+                        class="s0"
+                        d="m0.5 32l2.2-8.2c-1.3-2.4-2.1-5.1-2.1-7.9 0.1-8.8 7.1-15.9 15.7-15.9 4.2 0 8.2 1.7 11.1 4.6 3 3 4.6 7 4.6 11.3 0 8.7-7 15.8-15.7 15.8q0 0 0 0c-2.6 0-5.2-0.6-7.5-1.9zm8.7-5.1l0.5 0.3c2 1.2 4.3 1.8 6.6 1.8 7.2 0 13.1-5.9 13.1-13.1 0-3.6-1.4-6.9-3.8-9.4-2.5-2.5-5.8-3.8-9.3-3.8-7.1 0-13 5.9-13 13.2 0 2.4 0.7 4.9 2 7l0.3 0.5-1.3 4.8zm14.8-5.4c-0.4 1-1.9 1.8-2.7 1.9-0.6 0.1-1.5 0.2-2.4-0.1-0.6-0.2-1.3-0.5-2.3-0.9-3.9-1.7-6.5-5.7-6.7-6-0.2-0.2-1.6-2.1-1.6-4.1 0-1.9 1.1-2.9 1.4-3.3 0.4-0.4 0.8-0.5 1.1-0.5q0.4 0 0.7 0c0.2 0.1 0.6 0 0.9 0.7 0.3 0.8 1.1 2.8 1.2 3 0.1 0.2 0.2 0.4 0 0.7-0.1 0.2-0.2 0.4-0.4 0.6-0.2 0.3-0.4 0.5-0.6 0.7-0.1 0.2-0.4 0.4-0.1 0.8 0.2 0.4 1 1.7 2.2 2.8 1.4 1.3 2.7 1.7 3.1 1.9 0.4 0.2 0.6 0.2 0.9-0.1 0.2-0.2 0.9-1.1 1.2-1.5 0.3-0.4 0.5-0.3 0.9-0.2 0.3 0.1 2.3 1.1 2.7 1.3 0.3 0.2 0.6 0.3 0.7 0.4 0.1 0.2 0.1 1-0.2 1.9z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="p-2 color-primary text-decoration-none fw-bold"
+                  >
+                    (62)8282-8448
+                  </a>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
@@ -453,8 +793,15 @@
             <div class="col-4">
               <nav class="nav flex-column">
                 <h6 class="">A empresa</h6>
-                <a class="nav-link color-white p-0 mb-1" aria-current="page" href="#">Quem somos</a>
-                <a class="nav-link color-white p-0 mb-1" href="#">Termos de uso e privacidade</a>
+                <a
+                  class="nav-link color-white p-0 mb-1"
+                  aria-current="page"
+                  href="#"
+                  >Quem somos</a
+                >
+                <a class="nav-link color-white p-0 mb-1" href="#"
+                  >Termos de uso e privacidade</a
+                >
                 <a class="nav-link color-white p-0 mb-1" href="#">Categorias</a>
                 <a class="nav-link color-white p-0 mb-1" href="#">Contato</a>
               </nav>
@@ -462,8 +809,15 @@
             <div class="col-4">
               <nav class="nav flex-column">
                 <h6 class="">A empresa</h6>
-                <a class="nav-link color-white p-0 mb-1" aria-current="page" href="#">Quem somos</a>
-                <a class="nav-link color-white p-0 mb-1" href="#">Termos de uso e privacidade</a>
+                <a
+                  class="nav-link color-white p-0 mb-1"
+                  aria-current="page"
+                  href="#"
+                  >Quem somos</a
+                >
+                <a class="nav-link color-white p-0 mb-1" href="#"
+                  >Termos de uso e privacidade</a
+                >
                 <a class="nav-link color-white p-0 mb-1" href="#">Categorias</a>
                 <a class="nav-link color-white p-0 mb-1" href="#">Contato</a>
               </nav>
@@ -471,8 +825,15 @@
             <div class="col-4">
               <nav class="nav flex-column">
                 <h6 class="">A empresa</h6>
-                <a class="nav-link color-white p-0 mb-1" aria-current="page" href="#">Quem somos</a>
-                <a class="nav-link color-white p-0 mb-1" href="#">Termos de uso e privacidade</a>
+                <a
+                  class="nav-link color-white p-0 mb-1"
+                  aria-current="page"
+                  href="#"
+                  >Quem somos</a
+                >
+                <a class="nav-link color-white p-0 mb-1" href="#"
+                  >Termos de uso e privacidade</a
+                >
                 <a class="nav-link color-white p-0 mb-1" href="#">Categorias</a>
                 <a class="nav-link color-white p-0 mb-1" href="#">Contato</a>
               </nav>
@@ -481,8 +842,13 @@
         </div>
       </div>
       <div class="footer-bottom bg-gray pt-3 pb-3">
-        <p class="text-center fs-6 mb-2">Copyright 2022 Objetos Antigos - Todos os direitos reservados CNPJ 03.007.331/0001-41 / Av Nações Unidas, 3.003 - Osasco/SP - CEP 06233-903</p>
+        <p class="text-center fs-6 mb-2">
+          Copyright 2022 Objetos Antigos - Todos os direitos reservados CNPJ
+          03.007.331/0001-41 - Av Nações Unidas, 3.003 - Osasco/SP - CEP
+          06233-903
+        </p>
       </div>
     </footer>
+    <!-- /Footer -->
   </body>
 </html>

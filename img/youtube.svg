@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 27" width="37" height="27">
+	<title>youtube</title>
+	<defs>
+		<image width="37" height="27" id="youtube" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAbCAYAAAD77kbeAAAAAXNSR0IArs4c6QAAAsZJREFUWEfNl81LVFEYxn/vnbHJNLKwQoLAoi9auWhVqwiCDFpI0SIYHXV2EQiazgQOSDMGUuROp6wZocBNroKMNtVfUFBBRAkFfVCSmY6p941zx5mMrGauo84LF+7iPM/53XPvfc95hAWV6A5uF9VjtlAtsFFt1otQjlCGsg4oBdYilKD4FDyCehHxZG1sbIRZcK4f89c0yhQW30WZVGQC7G9gjYnYo3OWZ6Shre9lxkMyN4nuYDuqXYB3IeiK3atE/aH+sJnPgboZbWoQkYEVA/jLRKq01ofiPRKJRKxq37uvQPlqQ5n5U9NSJslY02FFHhQDUPrVySlJxJo6QSLFAgVclUSs+ToQKCKoOwZqGDjhAuojsMWF7j8SfWigHgGH8jUXSAp2l411BTier/4f458YqGfAPhemd/0d8VqnpXQHay3VToUDLnx+lwivDdRbYJsLsyxURuv0OySMsNOF37xE3xuoT0ClC5M/oIxHb+9ZX8XE9DlbtEVga96+ypeCQ2Ugrl1u3LQmZdWp0Arsyh1OPxso8xdtzl2UHbnoSi30GbwU2GPb3tugNbn7p6EK+vrM5IlYY41ghRXqcofJjCww1EAssMODx+z0S2jGaSi3f9+IvyN+1DzfrZ5g5cysnkdpAaz8V+eXQuGDgXoO7M3bSOSGv70/kIwG21Q0BGzI22NxwRsD9Rg46MLwBTAH7Heh/Zfk6VL2vgKzZD90Z+8rqlOCCsOSiAUjoJ3L9Nh52wraa1bqCHA/b/WyCfS0DA2d9Ey9qhgHJ0Kteok3Ve6kmWS0uVmF/tUmUgjVd8Rj2dyXjAXDil5wwuZqlNDjb4+bzTud+zI1eDFYpZaaLr3bhipJN8QyhVJRLUXEB5Qg+FDxgl0CTjo2ATbdyZW5+YRsetiMSchqkrKQEmVKlUmTlC1lXGFMkVGvyr0zoT5z2HTqJ7YnATGpLMNxAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="youtube" href="#youtube" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

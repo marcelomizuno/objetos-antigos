@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 34" width="23" height="34">
+	<title>question</title>
+	<defs>
+		<image width="24" height="34" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAiCAYAAABFlhkzAAAAAXNSR0IArs4c6QAAAo9JREFUSEvtVrFu01AUPZdaqN1IF5iZ2JMfANEFWBhSiVaKPdSuOjCTx4IY0Eu+ANXOEEcqQzswpUIiArHTTyifQLoRaMVF17GrF+c5jtuOvNXvnXPeveeeZ0LJ6mtfEfAIwGPL1uO1ydnzzbdHf4pgyPah3wn2wH8fEqhZJiD9PgbwyVXRVn7/HEGs/Q8AXshGAv1g8BGAkauiUf5wrP0OgWoMDtL9IQjfWu1QMJI1Q5CBCzCAdkuFAl66DvRe7Rzn+9mNiWg7I7kkGHSCLWY+AHDiwNnYVu/l2pVWX+8EBBKicHUyfim9SQgycFG+gpXGVcAzJVI2AK8AHLsqejol0MG+1JHBu57qhUWyBzpoMrjuwOkuEjHQwSmD77sqooQg1v5PADUHzrrtYKx9seih7DHIpfEbNjHGLboZAUvtXRU18gekgRe4OBXwxFF06ysxv0vJuq6K2vkzfb1TJ9B3wTQJrIrMxrVUuCtgh2+at3+t3vkNYOyqaL3gFiJ6atNY+0MCPUg9P7Nfain2M62XnkkApM6lBKmijwCe5DeL5fLDU5mgktkNWxf1ba4HlQlKbB1rX+ZA5mHqomWXWUrpl6d6m7az2Rww0bOlCXJ9KowTU71YeCmCZZUbtYeo99rhsJQgp9w6WFKmFPxzfgBLCcyxt01talkzSmZELCTIwBc11BAABl57KtJm48sIJE/qDG54qneSd4wBPmLgSx78MiqKbBprX+LAmjdpCEoKj9cmZ/eKHv6yGwiBNQTTCJemFsb2Ujcoqr8tZW2VKLvB0BaAM000HvjKBFdJ2fk0XhBEiwik9kXOqWJTKdFdAbO8E8kPl837VQhYHpzsqTQP3piL/hNcew6u1eSbsOk/p2Gdi7Y1wpkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="?" href="#img2" transform="matrix(1,0,0,1,-1,0)"/>
+</svg>

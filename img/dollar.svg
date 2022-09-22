@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 33" width="19" height="33">
+	<title>dollar</title>
+	<defs>
+		<image width="21" height="33" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAhCAYAAAA2/OAtAAAAAXNSR0IArs4c6QAAAm1JREFUSEu1VjFSFUEU7E7M4QhwBElILUmUxECqvACgiaHoAUROAHIAAwlMlLKQTEM5gh5BcpO2empm683s7LIW+pIf/Nmenn7db4a4oSTdAfABwIO89BzAI5K/pz7lAtBPAbAsPyf58DagAvCT5LpBJL0FsEtyktASpv8GtKPjiKnZA7gg+bSVYcRU0ksA9wDcz4vPAFyRPMrHf+zjh/9PADyPjatAM+DrDHZE8mCqGZLWAFhfb145ogX9khdtkby8yRmxcQYujhhAJb0D8ATALMPeRpK+A7gL4BnJ4wj6K3+wTvK6fCxpJR/TWroOir5hjf97D+CM5E4EtXUuSW5FNpLeAHjRMKzkyRub1DXJ1Rb0lOReA5p0ttklOUUfexJJ+gFgzeuWMPWxfLyktaSpEyVde6CJfsPUDfAHLmv9OTe017PkgMh00k6SDGxdS7MM6DBErQevRlAnycZ3/DaiAxonGCiCbZP0JBtqKlFXAPZI+rdbkgxsZ7iqqPayX0JQjugGDb5t9HZU3UjLM05Ux5vOtBe7TrOxu9ENiXpF8jAx7Yy6sofF3wTgVLkshxNVgUsyATc6haeA9q6MCPytGYduZKW3JCdqZfBpNvQwiEO3q6sjjMbZ5BWmTknP+CX3J57wIaZpcDR9GOJcQBN1AKvNhHJ3nem2epOqzv7cLM1NMOPihNG8zYlzlH3tbMREeSezdROcqsUlqRo6EfQYwH6O6c5cmhotC2Df/JIKcDG8u9yNao6pb1XrPn3x5SBYv5imFNdys2b7RbLbNv7kFT0T1R6oR9/XdkIZY+mzZwR627fUf3n1/fX79A8IqX8x1OFUyAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="$" href="#img3" transform="matrix(1,0,0,1,-1,0)"/>
+</svg>

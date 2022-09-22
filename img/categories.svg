@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35" width="40" height="35">
+	<title>dollar</title>
+	<defs>
+		<image width="42" height="36" id="categories" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAkCAYAAAD/yagrAAAAAXNSR0IArs4c6QAAAIlJREFUWEftmDEKACAMA+3/H62LdZEuckIDcTfGszTFGCIrts/Z3G/IGk3jXQDnS19EbfTxiUz0EVy5rSRKH0Tp6bUn6ubfdLq1o/KiNkrXgGzW0yAoPWc9RdJZT5FMHX2iNBFKz0MJRfLoOOtppHJE/VMClYCHEgjk0I/Qbl1AnyhVW7SOzlCyAL+0KiV7WsAwAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Rectangle 23 copy 2" href="#categories" transform="matrix(1,0,0,1,-1,-1)"/>
+</svg>

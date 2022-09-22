@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 48" width="51" height="48">
+	<title>camera</title>
+	<defs>
+		<image width="51" height="48" id="camera" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAYAAAC8NUKEAAAAAXNSR0IArs4c6QAAA3BJREFUaEPtmVmojVEUx3/3QSkZiwfK8CLDC+VFmfLggQdDSuahjEmGW17MUgplzlCGB5ISNxQSQsisW2aRzBLJTNH/to6+u9vfOWc7zvfdczv78fv2+db6n7X2Wv/13xXAE/JbA4Hb+W1NZ1cF8DtP092Bm3nuTWVbFMwOoNrxogWw0J6VFJihwCEHTHvgcRlMCokWTbNckbkPfHV8vAeMSMFvr8kQMIuBp5Gv9AJ6AN1KEYxbACYAK4EtMWCWJA0yJDI+MOuA047TTYF+gL6d6CoUzGxPmintbtQ3MFUxYZkTKfe5IjcL6G+b1CL029hVzMgs9VhVEQlpvruATsArQD0va7EpJhjfmRF1Wg089wA94eF+AvPBaJQvpWt9Jg0w14BPDhiV+JmAnI+uOg/Gl2YisA0tnaJglGL76nJk4sBovLjsRGYUcMHAzAN6O+8/Az8zz9JIszgwa3Ok2U7POatFwcpg7B8SnQltmqpmhURmA3AKOGg+lHRkJloqZqZjUakM+a0stTRzwRwBngHTgA6lDkZpdgZ4XwYTKY9pFAA3zcqRUUB8w1nSpbkcmczRyKab1YUzMxW4BNyqD9UsStdKvs+MAY4aoo8hTVPhHAc8SJGbvbPBrl2h3Oy4zRPzgU3A+BSIpjsFFEQ0WwG6LbgLnAWGBUpN2VizRumHjrdSTcW/NImuAFY57w8DjwoZzpoBEv+UcpoOuzoGsulmhYD5r4KG0mwS8MKcHwJsBS4CU4A39jwXmJfAD+cPaG3fSEzQeA00AKYD+82ZlsBmk2NFww9Y2sUpmorM3BgR8LojzMtE0dSZnsBwc0aKyQzTtGR0NLAeOAZsN/15t2dmV9EIFQGLqpv1AeSooiQWcNKcbgNsA/oCjexcefDUHGKfCOjbW7TIRP/RxpYCqmYbAZXrL+bNZGANsBeo9Ah+PqfjniUCRsYVlYz8oxu0scAV80qcTu/U3JRa50IQRPYmCmYZsAgYBKiBLbd+8MuuNKTiqz/oQmoB8C0QVNHAKG3eRpzpYod5jz0bbEr91Qhf0quOwEjgDiBxPGQNAL6bXaV5xpbvG9Uh3CzEiTT2VoWA8d02p+G0a7Mt0BwIAhPSH5IEqXOlIlMLjAjdX9Jm3jQBNHdruWcmSYez2dK56uyCqSvO/asfNZGRIlgf1vk/wq8f3Lv77GsAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Vector Smart Object" href="#camera" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

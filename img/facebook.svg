@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 27" width="26" height="27">
+	<title>facebook</title>
+	<defs>
+		<image width="26" height="27" id="facebook" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAbCAYAAABiFp9rAAAAAXNSR0IArs4c6QAAAhNJREFUSEvt1ktrE1EUB/D/uZlp0mp9oeC24EZciCCKm679AOLKzkRrIu6MWuaxcXDRSaVNIohIJtVMln4AC4L4FVwVRXERKgVdaOqjNJI5cqsJYyiamUzAhbOb1/nNPffcO4eWFy5NpjqKS8QaRnAwU2NiSzGp4eZKDBRGYPRCElAm3819ArB3lBCAloQ2AEyOGPosoRaAPUNAH0F4gQAfGAhkHCKcBHAkFHNjWOgpCBXd9FbCH+oX8yaY3aSgJ+Pp3efOXy9v9mej7uYsAuaTgN4L0ZmeMR6+2inl9WL+KjHfTwBiX7dq2W4gf2H2FAfiIoDM9hyBjgN8YmiImAzNrt6RgZ47jtJMrz0DaPoPBRWvGIi5oNm1igz8yMlmREZdB2Nf8hDopmZVl3rQmPoOhANJQAygHdpTDN307vagtPoawKEQlAKgxJmjN6pKZ7ovKmLX125ZM4OWy7P7J4KUkPe/t1UGtecAGHGgl7rlHR109/Dncw9AuBIZYmA1a3nHBoUa7uUVBp2NDAFoMomZXuqo8/aCUVuT547jiKmx9dMsoP68HxwmoAjGVBzot8EQ4ZZmerflxcelwvjm1pdvfxltvHUExg3d9kqhqmv2VV2/+x/6lZF/PXXRe4boI9ruGaJ3QdGhFtWL+TIxXxt01cvnmDGXtb3FQXdvJqpQvE6VbN2q3gv9j1bBOLjTx3Y71R9/4BP0HXhtcwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="facebook" href="#facebook" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
