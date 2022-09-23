@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
+	<title>happy</title>
+	<defs>
+		<image width="25" height="25" id="happy" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAlJJREFUSEu1ljtoFFEUhr9zJzHxkd0NklINvjpZwQeRgEUqBUkhBEstLdOIpbG0ECxEIZWlQbDQIpDCQhCDUTHYGRXFUnAzm5W4ZuceubOv2XEmGbLZ6WbO4z/P/4ywyaP6c4hg4DKiF4EzwCHAAwLgO7CEyjxe9anIyFqaK0kSqOpubPkmMA3kNwukIfOBe5jcHRFZj+v/B6JaKmLNE+BYBudxlRWMnRIZXo4KOkB0Y3UCI8+AvdsAaJr8xuqk9BdeND+0QBoZvOoSoA1k7HgzoxCk0QOX4nZKlJb0CiZXdD2qgwT+DHCrixKlmd4WLz8j4ZjaXT9iU1RBZAnV08BQBvA1RN6i6sZ8X0Tfx/w9IForX0X0UUTwByNFkdwn1dIo1nyMGcYxKxh7QmT4m2r5OFZd2QdbSirXRAP/MXClbSnL4uVONt+15r9GGEvNRlmUvvy5ln5Q/gBajOjPOZAvwOHIxw0M50Xyi6qrp7DiJm5gk5JVMTouUnin6o9heQn0R/S/OpBagyqifhxtfAaOAH0ZeuJ8uGCPJvlyIJrBSVcqaZl05TRmHCT1ZCcBnK+wJ7HpCjEcjb8BpjIjCs9RORibLGc+l7QnTlDGyAUsk6CO8hNPQiSAhxg7izULwEhHYOGeJG+8I5t1lGk83mPlBnAJ2BNxUEV0HjF3CXQU4X7C7alv/NbcpW7jH2BYAG8QdD/IL6hVCLwJ0OsIZ1PKWueuEKR+CbOwcBkoNSIubNGvThauA4UXsXf3pMU7vb6MLaBe3/g2UI//VqLN3Kn/rn8OHw0pafyw5wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Vector Smart Object" href="#happy" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

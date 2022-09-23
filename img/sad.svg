@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
+	<title>sad</title>
+	<defs>
+		<image width="25" height="25" id="sad" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAnBJREFUSEu9lr1rFGEQxn+za6JJLlhYWYjiVyHICSpEghZByL274QrxtNReQa2sxFjaWVhZiJUYDoMcud2ksRDEQBQSBYvEBMV/wJCL+dwd2Uv2PO+LI5dzu/edj2dn5pmZV2jwpdPp3mB9/YqKGIHzwGHABgLgh8KUqPp2Z+doLpdbqudKagkymUzXyvLyfVW9C+xv9CPbskURedLV0/M4m82uVOpXgQwNDibVsrLAiSacV6rMSRhmxiYmZsoF/4AYYwYsyAE9OwCITZZDSPu+/za+KIFsR/C+RYASkIRhfxxRESSqwe9CIQpxJymqF/RcdyKRjGpUBBlynGFVfdhCimqaisijMc8bliJNNzZ+VrCogOoUIueA3ibAl1D9iEhE80SZ/qLd0XFI3FTqBiIvygSrKpL0PG82lUodsUW+VBhWYhYC1dPj4+PfHcc5KapR2veVlFRvimPMK4HrpUuRmbznnYnPQ8Z8UOhr0GiTY75/IZa7jjONajI+K4yIa8w8cLTMyUYIl3zfn3Rd9yxhGDFub4OUrWFZ/fl8/pMxps+Cd0BHmf5CBLK5PSrK/QQC3xSOAXuaqMmmwLzC8Zq+XGO0CSctqdSLpCWnFcZBrZrsJkDka6GaXdUQawKvAS8U+RyG4ZKIdNtwSsEA1xpRfItd1X3yl+IwYtn2Aw2CywJXFSJqHgB+ofpV4Y2KjNqq91TkVs0URH1Sp+NR1TtY1qyoPgcONsjhIqq3RWRV4WUFfbc6vs7smgaeAU8Bq5kiRXMK1YsKA7F+aXZFF/9lChej2dqI7dsncXht34ylgdjuHR8Dtf21Us6k3Xp3/QEFNiGVMykt7gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Vector Smart Object" href="#sad" transform="matrix(1,0,0,1,0,0)"/>
+</svg>
