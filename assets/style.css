@@ -34,12 +34,20 @@
     font-family: "Roboto";
 }
 
+.up-4 {
+    margin-top: -24px !important;
+}
+
 .bl {
     border-left: 1px solid #000;
 }
 
-.btn, .card, .card-img, .card-img-top {
+.btn, .card, .card-img, .card-img-top, .form-control {
     border-radius: 0;
+}
+
+.form-control {
+    border-color: var(--color-primary);
 }
 
 .card {
@@ -50,6 +58,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.ask-seller-chat {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.read-more-container {
+    background: rgb(255,254,242);
+    background: linear-gradient(0deg, rgba(255,254,242,1) 0%, rgba(255,254,242,1) 50%, rgba(255,254,242,0) 100%);
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    transition: all 0.5s ease;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -67,7 +91,7 @@
 	background-color: #FFFFFF;
 }
 .border{
-  border: 8px solid #666;
+  border: 1px solid var(--color-primary)!important;
 }
 .tri-right.border.btm-right-in:before {
 	content: ' ';
@@ -78,7 +102,7 @@
 	right: -1px;
 	bottom: -20px;
 	border: 10px solid;
-	border-color: var(--bs-border-color) var(--bs-border-color) transparent transparent;
+	border-color: var(--color-primary) var(--color-primary) transparent transparent;
 }
 .tri-right.btm-right-in:after{
 	content: ' ';
@@ -90,5 +114,30 @@
 	bottom: -18px;
 	border: 9px solid;
 	border-color: var(--color-white) var(--color-white) transparent transparent;
+}
+.talk-bubble.tri-left {
+    background: transparent;
+}
+.tri-left.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: auto;
+	left: -1px;
+	bottom: -20px;
+	border: 10px solid;
+	border-color: var(--color-primary) transparent transparent var(--color-primary);
+}
+.tri-left.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: auto;
+	left: 0;
+	bottom: -18px;
+	border: 9px solid;
+	border-color: var(--color-white) transparent transparent var(--color-white);
 }
 
